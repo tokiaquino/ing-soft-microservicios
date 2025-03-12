@@ -13,6 +13,8 @@ RUN rm -rf /var/lib/apt/lists/*
 
 USER flaskapp
 RUN mkdir app
+
+COPY ./test ./test
 COPY ./main ./main
 COPY ./app.py .
 

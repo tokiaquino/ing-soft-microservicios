@@ -1,0 +1,1 @@
+echo "GET http://ms-alpha:5000/simulate-failure" | vegeta attack -duration=10s | tee results.bin | vegeta report

@@ -1,1 +1,2 @@
-echo "GET http://ms-alpha:5000/simulate-failure" | vegeta attack -duration=10s | tee results.bin | vegeta report
+# echo "GET http://ms-alpha:5000/simulate-failure" | vegeta attack -duration=10s | tee results.bin | vegeta report
+echo "GET http://beta.ingesoftcurso.localhost/show-compras" | vegeta attack -duration=10s | tee results.bin | vegeta report
